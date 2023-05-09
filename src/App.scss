@@ -1,0 +1,769 @@
+* {
+  // html k tamam tags ki by default margin or padding hoti he
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$green-color: #64f4abff;
+$background-color: #2d2e32;
+body {
+  font-family: "Poppins", sans-serif;
+}
+// --------------------------------------------- Header-------------------------
+.navbar {
+  background-color: #25262a;
+  padding: 28px 17px;
+  .nav-link {
+    font-size: 18px;
+    color: #e8e8e8;
+    font-weight: 400;
+    position: relative;
+  }
+  .navbar-nav {
+    padding: 0 0 0 110px;
+  }
+  .nav-link:focus {
+    font-weight: 600;
+    color: #fff;
+  }
+  .nav-link:hover {
+    font-weight: 600;
+    color: #fff;
+  }
+  .nav-link::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .nav-link:hover::after {
+    opacity: 1;
+  }
+  .icon {
+    border: none;
+    color: #ffaf29;
+    transition: all 0.3s;
+    background-color: #2d2e32;
+    border-radius: 10px;
+
+    padding: 1em;
+  }
+  .icon:hover {
+    background-color: #fecd1a;
+    color: #25262a;
+  }
+}
+// -------------------------------------------------Footer-----------------------
+
+.footer {
+  background-color: #25262a;
+  color: white;
+  padding: 50px 35px;
+  .footer-mid {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+    color: #e8e8e8;
+  }
+  .footer-icon {
+    display: flex;
+    justify-content: space-around;
+  }
+  .icon {
+    border: none;
+    color: #ffaf29;
+    transition: all 0.3s;
+    background-color: #2d2e32;
+    border-radius: 10px;
+
+    padding: 1em;
+  }
+  .icon:hover {
+    background-color: #fecd1a;
+    color: #25262a;
+  }
+}
+//------------------------------------------------------Hero-------------------------------
+.hero {
+  background-color: #25262a;
+  padding: 0 35px;
+  color: white;
+  .hero-before {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: $green-color;
+    margin-bottom: 5px;
+  }
+  .hero-title {
+    color: $green-color;
+    margin-left: 5px;
+  }
+  .hero-h1 {
+    font-size: 78px;
+    font-weight: 600;
+  }
+  .hero-h3 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 107px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .hero-para {
+    color: #ecf2fd;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    max-width: 490px;
+    margin: 0 0 1em;
+  }
+
+  .hero-img {
+    text-align: center;
+    background-image: url("../src/media/images/hero-img-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+  }
+  .black-TR{
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    height: 100px;
+  }
+  .black-TL{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    height: 100px;
+  }
+  .black-BR{
+    position: absolute;
+    top: 360px;
+    right: -5px;
+    height: 100px;
+  }
+  .black-BL{
+    position: absolute;
+    top: 360px;
+    left: -5px;
+    height: 100px;
+  }
+  .ps{
+    position: absolute;
+    top: 120px;
+    right: 98px;     
+  }
+  .id{
+    position: absolute;
+    top: 120px;
+    left: 98px;  
+  }
+  .xd{
+    position: absolute;
+    top: 395px;
+    right: 22px;
+  }
+  .ai{
+    position: absolute;
+    top: 395px;
+    left: 22px;
+  }
+  .img-fluid{
+    height: auto;
+    max-width: 100%;
+  }
+  .hero-left {
+    padding-top: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    .hero-h1{
+      font-size: 40px;
+    }
+    .hero-h3{
+      font-size: 40px;    
+      line-height: 50px;
+    }
+    .hero-para{
+      font-size: 14px;
+    }
+  }
+}
+//------------------------------------------------------skills----------------------------
+.skills {
+  background-color: $background-color;
+  color: white;
+  padding: 160px 35px 130px;
+  .skills-before {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: $green-color;
+    margin-bottom: 5px;
+  }
+  .skills-title {
+    color: $green-color;
+    margin-left: 5px;
+  }
+  .card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #e8e8e8;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .card-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+  .card {
+    border-radius: 20px;
+    background-color: #25262a;
+    padding: 60px 20px;
+  }
+  .card:hover {
+    background-image: linear-gradient(
+      135deg,
+      rgb(122, 220, 180) 0%,
+      rgb(0, 208, 130) 100%
+    );
+  }
+  .skill-card-img {
+    border: 2px solid #64f4ab;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: #2d2e32;
+    margin: auto;
+  }
+  .skill-card-img:hover {
+    background-image: white;
+  }
+  .skills-h2 {
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    padding: 0;
+    border-radius: 0;
+    max-width: 491px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .skills-right-p {
+    color: #ecf2fd;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+    max-width: 562px;
+  }
+  .skill-r {
+    padding: 160px 0 0 160px;
+  }
+  @media only screen and (max-width: 600px) {
+    .skill-r {
+      padding: 10px 0 0 10px;
+    }
+    .skills-right-p {
+      font-size: 14px;
+    }
+    .skills-h2 {
+      font-size: 25px;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+    .card-title {
+      font-size: 20px;
+      line-height: 1.2em;
+    }
+    .card {
+      padding: 30px 10px;
+    }
+  }
+}
+//------------------------------------------------------project 1-----------------------
+.project1 {
+  padding: 160px 0px 0px;
+  background-color: $background-color;
+}
+.projectOne {
+  background-color: $background-color;
+  padding: 0 70px 145px;
+  .project-one-img {
+    border-radius: 45px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .project-one-l {
+    padding: 0 0 0 10px;
+  }
+  .project-r {
+    padding: 40px 5px 40px 35px;
+    background-image: url("../src/media/images/testimonials-img-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 50px 35px 130px;
+    .project-one-l {
+      padding: 0 0 0 0px;
+    }
+  }
+}
+//------------------------------------------------------projectTwo-------------------
+.projectTwo {
+  background-color: $background-color;
+  padding: 0 70px 145px;
+
+  .project-two-r {
+    padding: 0 0 0 40px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 50px 35px 130px;
+    .project-two-r {
+      padding: 0 0 0 0px;
+    }
+  }
+}
+////////------------------------------------------------ProjectFour
+.ProjectFour {
+  background-color: $background-color;
+  padding: 0 70px 145px;
+  .project-four-r {
+    padding: 0 0 0 40px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 35px 140px;
+    .project-four-r {
+      padding: 0 0 0 0px;
+    }
+  }
+}
+//------------------------------------------------------ProjectSix
+.ProjectSix {
+  background-color: $background-color;
+  padding: 0 70px 145px;
+  .project-six-r {
+    padding: 0 0 0 40px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 35px 140px;
+    .project-six-r {
+      padding: 0 0 0 0px;
+    }
+  }
+}
+//------------------------------------------------------projectThree------------------
+.projectThree {
+  background-color: $background-color;
+  .project-three-uper {
+    padding: 0 70px 80px;
+  }
+  .project-three-lower {
+    padding: 0 35px 160px;
+  }
+  .project-three-l {
+    padding: 0 0 0 10px;
+  }
+  .project-three-btn {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #e8e8e8;
+    border-radius: 14px;
+    box-shadow: 0px 10px 15px 0px rgba(232, 232, 232, 0.25098039215686274);
+    padding: 15px 42px;
+  }
+  @media only screen and (max-width: 600px) {
+    .project-three-uper {
+      padding: 0 35px 50px;
+    }
+  }
+}
+//------------------------------------------------------Project3--------------
+.Project3 {
+  background-color: $background-color;
+}
+.project3-uper {
+  padding: 0 70px 80px;
+}
+.project3-l {
+  padding: 0 0 0 10px;
+}
+@media only screen and (max-width: 600px) {
+  .project3-uper {
+    padding: 0 35px 50px;
+  }
+}
+//-----------------------------------------------------ProjectFive
+.ProjectFive {
+  background-color: $background-color;
+  .project-five-uper {
+    padding: 0 70px 80px;
+  }
+  .project-five-l {
+    padding: 0 0 0 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .project-five-uper {
+      padding: 0 35px 50px;
+    }
+  }
+}
+//-------------------------------------------------------ProjectSeven
+.ProjectSeven {
+  background-color: $background-color;
+  .project-seven-uper {
+    padding: 0 70px 80px;
+  }
+  .project-seven-l {
+    padding: 0 0 0 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .project-seven-uper {
+      padding: 0 35px 50px;
+    }
+  }
+}
+//-------------------------------------------------------Contact
+.Contact {
+  background-color: $background-color;
+  padding: 160px 35px;
+  @media only screen and (max-width: 600px) {
+    padding: 100px 25px;
+  }
+}
+//------------------------------------------------------ContactLeft
+.ContactLeft {
+  .CL-before {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: $green-color;
+    margin-bottom: 5px;
+  }
+  .CL-title {
+    color: $green-color;
+    margin-left: 5px;
+  }
+  .CL-h2 {
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    padding: 0;
+    border-radius: 0;
+    color: #fff;
+    max-width: 491px;
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+  .CL-right-p {
+    color: #ecf2fd;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+    max-width: 647px;
+  }
+  .card {
+    background-color: $background-color;
+    color: white;
+    border: none;
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-family: "Montserrat";
+      line-height: 1.5;
+      text-align: left;
+    }
+    .card-text {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      color: #e8e8e8;
+    }
+    .CL-left-image{
+      
+      padding: 26px;
+      border: none;
+      border-radius: 50%;
+    
+      background-color: #25262a;
+    }
+  }
+}
+//------------------------------------------------------Form
+.Form{
+  // background-color: $background-color;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  .form-input{
+    width: 100%;
+    // color: #fff;
+    height: 55px;
+    border-radius: 14px;
+    padding: 0 10px 0 25px;
+    background-color: #25262a;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #64f4ab;
+  }
+  .textareastyle{
+    width: 100%;
+    color: #fff;
+    height: 100%;    
+    border-radius: 14px;
+    padding: 20px 25px;
+    background-color: #25262a;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #64f4ab;
+    min-height: 255px;
+  }
+}
+//------------------------------------------------------Cards-----------------------------
+.cards {
+  background-color: $background-color;
+  color: white;
+  padding: 50px 35px 130px;
+  .card {
+    background-color: #25262a;
+    border: none;
+    .card-body {
+      padding: 85px 0px 60px;
+      .card-text {
+        color: #e8e8e8;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 2.8em;
+        text-align: center;
+      }
+    }
+    .card-title {
+      font-size: 50px;
+      text-align: center;
+      color: #64f4ab;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 87px;
+      font-weight: 600;
+    }
+  }
+  .card-one {
+    border-radius: 50px 0 0 50px;
+  }
+  .card-mid {
+    border-radius: 0;
+  }
+  .card-four {
+    border-radius: 0px 50px 50px 0px;
+  }
+  @media only screen and (max-width: 600px) {
+    .card-one {
+      border-radius: 50px 50px 0 0;
+    }
+    .card-four {
+      border-radius: 0px 0px 50px 50px;
+    }
+  }
+}
+//------------------------------------------------------bottom---------------------------------
+.bottom {
+  background-color: $background-color;
+  color: white;
+  padding: 0 35px 160px;
+  .container {
+    background-color: #25262a;
+    padding: 70px 0 75px;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    
+    .bottom-before {
+      display: inline-block;
+      width: 70px;
+      height: 1.5px;
+      background-color: $green-color;
+      margin-bottom: 5px;
+    }
+    .bottom-top-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      // height: 100px;
+    }
+    .bottom-bottom-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .bottom-h2 {
+      font-size: 46px;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin: 0 0 20px;
+      padding: 0;
+      border-radius: 0;
+      max-width: 491px;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .bottom-p {
+      color: #ecf2fd;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 29px;
+      margin: 0 0 1em;
+      max-width: 731px;
+      text-align: center;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .bottom-mid {
+      padding: 0 0 10px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container{
+      .bottom-h2 {
+        font-size: 25px;
+      line-height: 1.5em;
+      margin: 0 0 10px;
+      max-width: 217px;
+      
+      }
+      .bottom-p{
+        font-size: 14px;
+        line-height: 1.6em;
+        max-width: 240px;
+      }
+    }
+    
+    .bottom-top-img{
+      height: 80px;
+    }
+    .bottom-bottom-img{
+      height: 60px;
+    }
+    
+  }
+}
+//-------------------------------------go to top---------------------------------
+.gototop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .bottom-btn {
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #25262a;
+    background-color:white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+//------------------------------------------------------Contact btn-----------------------------------
+.contact-btn {
+  background-image: linear-gradient(91deg, #ffaf29 0%, #fecd1a 100%);
+  box-shadow: 0px 10px 15px 0px
+    rgba(255, 174.99999999999997, 40.99999999999999, 0.25098039215686274);
+  border-radius: 14px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 42px;
+}
+.contact-btn:hover{
+color: black;
+}
+//------------------------------------------------------Commonside--------------------------------------------------
+.commonSide {
+  .commonSide-h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+    padding: 0;
+    border-radius: 0;
+    max-width: 491px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .commonside-p {
+    color: #ecf2fd;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 1em;
+    max-width: 562px;
+  }
+  .cs-before {
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background-color: $green-color;
+    margin-bottom: 5px;
+  }
+  .cs-title {
+    color: $green-color;
+    margin-left: 5px;
+  }
+  .commonside-base {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.7em;
+    letter-spacing: 0.54px;
+    color: #fecd1a;
+    padding-left: 15px;
+  }
+  .commonside-arrow {
+    margin: 0 15px 0 0;
+  }
+  @media only screen and (max-width: 600px) {
+    .commonSide-h2 {
+      font-size: 25px;
+    }
+  }
+}
+//------------------------------------------------------Commonpicside--------------------------------
+.commonpicside {
+  .project-side {
+    padding: 40px 45px 40px 10px;
+    background-image: url("../src/media/images/testimonials-img-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .project-side-img {
+    border-radius: 45px;
+    // max-width: 100%;
+    // height: auto;
+    cursor: pointer;
+  }
+}
