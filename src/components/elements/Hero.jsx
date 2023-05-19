@@ -13,10 +13,10 @@ const Hero = () => {
                 <span className="hero-title">Introducing</span>
               </div>
               <h1 className="hero-h1">Hello</h1>
-              <h3 className="hero-h3">I'm Jessy Walter</h3>
+              <h3 className="hero-h3">Muhammad Wahab</h3>
               <p className="hero-para my-4">
-                Since beginning my journey as a freelance designer nearby 7
-                years ago, I 've done remote work for agencies, consulted for
+                Since beginning my journey as a freelance developer nearby 6-months
+                ago, I 've done remote work for agencies, consulted for
                 startup, and collaborated with talented people to create digital
                 products.
               </p>
