@@ -38,7 +38,7 @@ const Form = () => {
                   required
                   // maxlength="200"
                 ></textarea>               
-                <ContactBtn name="Send To Me" type="submit" />
+                {/* <ContactBtn name="Send To Me" type="submit" /> */}
               </form>
             </div>
           </div>

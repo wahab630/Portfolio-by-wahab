@@ -125,12 +125,17 @@ body {
 
   .hero-img {
     text-align: center;
-    background-image: url("../src/media/images/hero-img-bg.svg");
+    // background-image: url("../src/media/images/hero-img-bg.svg");
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
     max-width: 100%;
     position: relative;
+  }
+  .billa-pic{
+    height: 300px ;
+    width: 500px;
+    // border-radius: 100%;
   }
   .black-TR{
     position: absolute;
@@ -231,7 +236,7 @@ body {
   .card {
     border-radius: 20px;
     background-color: #25262a;
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
   .card:hover {
     background-image: linear-gradient(

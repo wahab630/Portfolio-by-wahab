@@ -10,10 +10,8 @@ const Cards = () => {
       <div className="cards">
       <ScrollTrigger onEnter={()=> setCounterStart(true)} onExit={()=> setCounterStart(false)} >
         <div className="container-fluid">
-
           <div className="row">
-            <div className="col-md-3 px-1 ">
-              
+            <div className="col-md-3 px-1 ">              
               <div className="card card-one">
                 <div className="card-body">
                   <h5 className="card-title"> {counterStart && <CountUp start={0} end={56} duration={1} delay={0}  />}</h5>

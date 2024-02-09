@@ -13,14 +13,14 @@ const Hero = () => {
                 <span className="hero-title">Introducing</span>
               </div>
               <h1 className="hero-h1">Hello</h1>
-              <h3 className="hero-h3">Muhammad Wahab</h3>
+              <h3 className="hero-h3">Billa  Scem</h3>
               <p className="hero-para my-4">
                 Since beginning my journey as a freelance developer nearby 6-months
                 ago, I 've done remote work for agencies, consulted for
                 startup, and collaborated with talented people to create digital
                 products.
               </p>
-              <ContactBtn name="Contact Me" />
+              {/* <ContactBtn name="Contact Me" />   */}
             </div>
             <div className="col-md-7 mt-5 mt-sm-0">
               <div className="hero-img">

@@ -81,7 +81,7 @@ const Skills = () => {
                 you can.
               </p>
               </div>
-              <ContactBtn name="Download CV"/>
+              <ContactBtn name="Scammer"/>
             </div>
           </div>
         </div>
